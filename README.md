@@ -1,6 +1,8 @@
 # flutter_dev_book_riverpod_sample_chapter_7_section_2
 
-A new Flutter project.
+書籍「Flutter実践開発」の第７章２節の内容に基づくものです。
+
+[Flutter実践開発 - iPhone／Android両対応アプリ開発のテクニック - ](https://gihyo.jp/book/2024/978-4-297-13993-3)
 
 ## Getting Started
 
