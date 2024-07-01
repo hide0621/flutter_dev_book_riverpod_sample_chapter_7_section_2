@@ -1,4 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+/// NotifierがStateプロパティを持ち、
+/// Notifier<int>と渡している型パラメータが状態の型となる
+class CounterNotifier extends Notifier<int> {
+  @override
+  int build() => 0;
+
+  void increment() {
+    state = state + 1;
+  }
+}
+
+/// Providerのうち、状態を変更可能にしたいならNotifierを使う
+/// 上記で実装したCounterNotifierをNotifierProviderで提供する
+final counterNotifierProvider = NotifierProvider<CounterNotifier, int>(() {
+  return CounterNotifier();
+});
 
 void main() {
   runApp(const MyApp());
